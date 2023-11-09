@@ -46,8 +46,6 @@ class BukuController extends Controller
     return view('dashboard.index', compact('bukus', 'sortField', 'sortOrder'));
   }
 
-
-
   public function PublicDetail($id)
   {
     $buku = Buku::with('kategori', 'pengarang')->findOrFail($id);

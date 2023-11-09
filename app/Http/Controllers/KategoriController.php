@@ -12,6 +12,7 @@ class KategoriController extends Controller
   {
     return view('dashboard.kategori.index');
   }
+  
   public function store(Request $request)
   {
     $nama_kategori = $request->nama_kategori;
